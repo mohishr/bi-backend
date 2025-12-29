@@ -56,7 +56,8 @@ class MySQLDocumentStore:
             id BIGINT PRIMARY KEY AUTO_INCREMENT,
             filename VARCHAR(255) NOT NULL UNIQUE,
             file_size BIGINT NOT NULL,
-            upload_time TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+            upload_time TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+            parsing_state VARCHAR(20) DEFAULT 'pending'
         );
         """
 
@@ -80,11 +81,22 @@ class MySQLDocumentStore:
                 REFERENCES files(id) ON DELETE CASCADE
         );
         """
+        file_text_table = """
+        CREATE TABLE IF NOT EXISTS file_text (
+            id BIGINT PRIMARY KEY AUTO_INCREMENT,
+            file_id BIGINT NOT NULL,
+            page_number INT NOT NULL,
+            parsed_text TEXT,
+            CONSTRAINT fk_file_text FOREIGN KEY (file_id)
+                REFERENCES files(id) ON DELETE CASCADE
+        );
+        """
 
         try:
             cursor.execute(files_table)
             cursor.execute(file_blobs_table)
             cursor.execute(tags_table)
+            cursor.execute(file_text_table)
             conn.commit()
         finally:
             cursor.close()
@@ -106,6 +118,43 @@ class MySQLDocumentStore:
             cursor.execute(sql, (filename, file_size))
             conn.commit()
             return cursor.lastrowid
+        finally:
+            cursor.close()
+            conn.close()
+
+    def update_parsing_state(self, file_id: int, state: str) -> bool:
+        """
+        Update the parsing_state for a file. Returns True if a row was updated.
+        Valid states: 'pending','queued','parsing','done','failed'
+        """
+        sql = """
+            UPDATE files SET parsing_state = %s WHERE id = %s
+        """
+
+        conn = self._connect()
+        cursor = conn.cursor()
+        try:
+            cursor.execute(sql, (state, file_id))
+            conn.commit()
+            return cursor.rowcount > 0
+        finally:
+            cursor.close()
+            conn.close()
+
+    def count_parsing_queue(self) -> int:
+        """
+        Count files that are currently queued or parsing.
+        """
+        sql = """
+            SELECT COUNT(*) as cnt FROM files WHERE parsing_state IN ('queued','parsing')
+        """
+
+        conn = self._connect()
+        cursor = conn.cursor()
+        try:
+            cursor.execute(sql)
+            row = cursor.fetchone()
+            return int(row['cnt']) if row else 0
         finally:
             cursor.close()
             conn.close()
@@ -194,6 +243,7 @@ class MySQLDocumentStore:
         sql = """
             SELECT 
                 f.id AS file_id,
+                f.parsing_state,
                 f.filename,
                 f.file_size,
                 f.upload_time,
@@ -219,6 +269,7 @@ class MySQLDocumentStore:
             # Build structured response
             file_info = {
                 "file_id": rows[0]["file_id"],
+                "parsing_state": rows[0].get("parsing_state"),
                 "filename": rows[0]["filename"],
                 "file_size": rows[0]["file_size"],
                 "upload_time": rows[0]["upload_time"],
@@ -245,12 +296,16 @@ class MySQLDocumentStore:
     def get_all_files(self) -> List[Dict[str, Any]]:
         sql = """
             SELECT 
-                id,
-                filename,
-                file_size,
-                upload_time
-            FROM files
-            ORDER BY upload_time DESC
+                f.id AS file_id,
+                f.filename,
+                f.file_size,
+                f.parsing_state,
+                f.upload_time,
+                GROUP_CONCAT(t.tag) AS tags
+            FROM files f
+            LEFT JOIN tags t on f.id = t.file_id
+            GROUP BY f.id,f.filename, f.file_size, f.upload_time
+            ORDER BY upload_time DESC;
         """
 
         conn = self._connect()
@@ -276,6 +331,7 @@ class MySQLDocumentStore:
         sql = f"""
             SELECT 
                 f.id AS file_id,
+                f.parsing_state,
                 f.filename,
                 f.file_size,
                 f.upload_time,
@@ -308,6 +364,7 @@ class MySQLDocumentStore:
                 if fid not in files_dict:
                     files_dict[fid] = {
                         "file_id": fid,
+                        "parsing_state": r.get("parsing_state"),
                         "filename": r["filename"],
                         "file_size": r["file_size"],
                         "upload_time": r["upload_time"],
@@ -346,6 +403,7 @@ class MySQLDocumentStore:
         sql = """
             SELECT 
                 f.id AS file_id,
+                f.parsing_state,
                 f.filename,
                 f.file_size,
                 f.upload_time,
@@ -375,6 +433,7 @@ class MySQLDocumentStore:
                 if fid not in files_dict:
                     files_dict[fid] = {
                         "file_id": fid,
+                        "parsing_state": r.get("parsing_state"),
                         "filename": r["filename"],
                         "file_size": r["file_size"],
                         "upload_time": r["upload_time"],
@@ -393,6 +452,56 @@ class MySQLDocumentStore:
         finally:
             cursor.close()
             conn.close()
+
+    # Add methods to insert and fetch file text 
+    # insert file text page wise
+    # fetch file text for all pages at once ensure errors and typesafe
+    def insert_file_text_page(self, file_id: int, page_number: int, parsed_text: str) -> int:
+        """
+        Insert parsed text for a specific page.
+        If the page already exists, it will be updated instead.
+        """
+
+        sql = """
+            INSERT INTO file_text (file_id, page_number, parsed_text)
+            VALUES (%s, %s, %s)
+            ON DUPLICATE KEY UPDATE parsed_text = VALUES(parsed_text)
+        """
+
+        conn = self._connect()
+        cursor = conn.cursor()
+
+        try:
+            cursor.execute(sql, (file_id, page_number, parsed_text))
+            conn.commit()
+            return cursor.lastrowid
+        finally:
+            cursor.close()
+            conn.close()
+            
+    def get_text_for_file(self, file_id: int) -> List[Dict[str, Any]]:
+        """
+        Return all parsed pages for a file sorted by page_number ASC.
+        Each item: { page_number: int, parsed_text: str }
+        """
+        sql = """
+            SELECT page_number, parsed_text
+            FROM file_text
+            WHERE file_id = %s
+            ORDER BY page_number ASC
+        """
+
+        conn = self._connect()
+        cursor = conn.cursor()
+
+        try:
+            cursor.execute(sql, (file_id,))
+            rows = cursor.fetchall()
+            return rows if rows else []
+        finally:
+            cursor.close()
+            conn.close()
+
 
 
 

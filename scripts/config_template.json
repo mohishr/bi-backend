@@ -1,0 +1,29 @@
+{
+  "api_url": "http://localhost:8000",
+  "folders": [
+    {
+      "path": "C:/Users/shrey/OneDrive/Documents/v1",
+      "tags": ["document", "important"],
+      "recursive": true,
+      "description": "Text files from documents folder"
+    },
+    {
+      "path": "./data",
+      "tags": ["data"],
+      "pattern": "*.csv",
+      "recursive": false,
+      "description": "CSV files from data folder"
+    }
+  ],
+  "upload_settings": {
+    "timeout_seconds": 30,
+    "retry_attempts": 3,
+    "monitor_parsing": true,
+    "max_wait_minutes": 30,
+    "check_interval_seconds": 10
+  },
+  "output": {
+    "results_file": "upload_results.json",
+    "log_file": "upload_progress.log"
+  }
+}

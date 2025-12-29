@@ -1,0 +1,332 @@
+2025-12-15 23:20:48,936 - ERROR - Configuration file not found: config.json
+2025-12-15 23:21:28,461 - INFO - 
+============================================================
+2025-12-15 23:21:28,461 - INFO - Processing: Text files from documents folder
+2025-12-15 23:21:28,461 - INFO - Path: C:/Users/shrey/OneDrive/Documents/v1
+2025-12-15 23:21:28,462 - INFO - Tags: document, important
+2025-12-15 23:21:28,462 - INFO - Pattern: *.txt
+2025-12-15 23:21:28,462 - INFO - ============================================================
+2025-12-15 23:21:28,465 - WARNING - Folder 2: Path does not exist: ./data
+2025-12-15 23:21:28,479 - INFO - 
+============================================================
+2025-12-15 23:21:28,479 - INFO - All folders processed!
+2025-12-15 23:21:28,480 - INFO - Total uploaded: 0
+2025-12-15 23:21:28,480 - INFO - ============================================================
+
+2025-12-15 23:22:20,735 - INFO - 
+============================================================
+2025-12-15 23:22:20,735 - INFO - Processing: Text files from documents folder
+2025-12-15 23:22:20,736 - INFO - Path: C:/Users/shrey/OneDrive/Documents/v1
+2025-12-15 23:22:20,736 - INFO - Tags: document, important
+2025-12-15 23:22:20,736 - INFO - Pattern: *.*
+2025-12-15 23:22:20,736 - INFO - ============================================================
+2025-12-15 23:22:20,739 - INFO - 
+============================================================
+2025-12-15 23:22:20,740 - INFO - Starting file uploads
+2025-12-15 23:22:20,740 - INFO - Folder: C:\Users\shrey\OneDrive\Documents\v1
+2025-12-15 23:22:20,740 - INFO - Files found: 9
+2025-12-15 23:22:20,740 - INFO - Tags: document, important
+2025-12-15 23:22:20,741 - INFO - ============================================================
+
+2025-12-15 23:24:28,685 - INFO - 
+============================================================
+2025-12-15 23:24:28,686 - INFO - Starting file uploads
+2025-12-15 23:24:28,686 - INFO - Folder: ../../../../OneDrive/Documents/v1
+2025-12-15 23:24:28,686 - INFO - Files found: 9
+2025-12-15 23:24:28,686 - INFO - Tags: None
+2025-12-15 23:24:28,686 - INFO - ============================================================
+
+2025-12-15 23:25:25,449 - ERROR - Cannot proceed without API connection
+2025-12-15 23:25:45,904 - INFO - 
+============================================================
+2025-12-15 23:25:45,904 - INFO - Starting file uploads
+2025-12-15 23:25:45,904 - INFO - Folder: ../../../../OneDrive/Documents/v1
+2025-12-15 23:25:45,905 - INFO - Files found: 9
+2025-12-15 23:25:45,905 - INFO - Tags: None
+2025-12-15 23:25:45,905 - INFO - ============================================================
+
+2025-12-15 23:25:45,905 - ERROR -  Unexpected error: Logger._log() got an unexpected keyword argument 'end'
+2025-12-15 23:26:58,472 - INFO - 
+============================================================
+2025-12-15 23:26:58,473 - INFO - Starting file uploads
+2025-12-15 23:26:58,473 - INFO - Folder: ../../../../OneDrive/Documents/v1
+2025-12-15 23:26:58,473 - INFO - Files found: 9
+2025-12-15 23:26:58,473 - INFO - Tags: None
+2025-12-15 23:26:58,474 - INFO - ============================================================
+
+2025-12-15 23:26:58,474 - ERROR -  Unexpected error: Logger._log() got an unexpected keyword argument 'end'
+2025-12-15 23:27:46,532 - INFO - 
+============================================================
+2025-12-15 23:27:46,538 - INFO - Starting file uploads
+2025-12-15 23:27:46,541 - INFO - Folder: ../../../../OneDrive/Documents/v1
+2025-12-15 23:27:46,543 - INFO - Files found: 9
+2025-12-15 23:27:46,543 - INFO - Tags: None
+2025-12-15 23:27:46,544 - INFO - ============================================================
+
+2025-12-15 23:27:46,544 - INFO - [1/9] Uploading: Pollution 04-11-2025_08-Nov-2024_16_19_KA 06 AB 4586 Pollu 04-11-2025.pdf
+2025-12-15 23:27:46,545 - INFO - Uploading: Pollution 04-11-2025_08-Nov-2024_16_19_KA 06 AB 4586 Pollu 04-11-2025.pdf (1.39 MB)
+2025-12-15 23:27:49,460 - INFO - [2/9] Uploading: Pollution 19-08-2026_30-Aug-2025_12_25_KA 06 AB 4529 Pollu 19-08-2026.pdf
+2025-12-15 23:27:49,461 - INFO - Uploading: Pollution 19-08-2026_30-Aug-2025_12_25_KA 06 AB 4529 Pollu 19-08-2026.pdf (1.23 MB)
+2025-12-15 23:27:52,325 - INFO - [3/9] Uploading: Pollution 19-08-2026_30-Aug-2025_12_26_KA 06 AB 4534 Pollu 19-08-2026.pdf
+2025-12-15 23:27:52,330 - INFO - Uploading: Pollution 19-08-2026_30-Aug-2025_12_26_KA 06 AB 4534 Pollu 19-08-2026.pdf (1.24 MB)
+2025-12-15 23:27:55,429 - INFO - [4/9] Uploading: Pollution 27-09-2026_07-Oct-2025_13_12_KA 06 AB 4584 Pollu 27-09-2026.pdf
+2025-12-15 23:27:55,434 - INFO - Uploading: Pollution 27-09-2026_07-Oct-2025_13_12_KA 06 AB 4584 Pollu 27-09-2026.pdf (626.91 KB)
+2025-12-15 23:27:57,970 - INFO - [5/9] Uploading: Pollution 27-09-2026_07-Oct-2025_13_12_KA 06 AB 4585 Pollu 27-09-2026.pdf
+2025-12-15 23:27:57,981 - INFO - Uploading: Pollution 27-09-2026_07-Oct-2025_13_12_KA 06 AB 4585 Pollu 27-09-2026.pdf (726.44 KB)
+2025-12-15 23:28:03,400 - INFO - [6/9] Uploading: RC_22-Oct-2022_16_10_KA 06 AB 4584 RC.docx
+2025-12-15 23:28:03,402 - INFO - Uploading: RC_22-Oct-2022_16_10_KA 06 AB 4584 RC.docx (424.32 KB)
+2025-12-15 23:28:12,454 - INFO - Uploading: RC_22-Oct-2022_16_10_KA 06 AB 4584 RC.docx (424.32 KB)
+2025-12-15 23:28:14,648 - INFO - [7/9] Uploading: RC_22-Oct-2022_16_12_KA 06 AB 4585 RC.docx
+2025-12-15 23:28:14,649 - INFO - Uploading: RC_22-Oct-2022_16_12_KA 06 AB 4585 RC.docx (416.72 KB)
+2025-12-15 23:28:22,028 - INFO - Uploading: RC_22-Oct-2022_16_12_KA 06 AB 4585 RC.docx (416.72 KB)
+2025-12-15 23:28:33,850 - INFO - [8/9] Uploading: RC_22-Oct-2022_16_15_KA 06 AB 4586 RC.docx
+2025-12-15 23:28:33,851 - INFO - Uploading: RC_22-Oct-2022_16_15_KA 06 AB 4586 RC.docx (430.13 KB)
+2025-12-15 23:29:03,430 - INFO - Uploading: RC_22-Oct-2022_16_15_KA 06 AB 4586 RC.docx (430.13 KB)
+2025-12-15 23:29:05,634 - INFO - [9/9] Uploading: RC_24-Nov-2022_15_15_KA 06 AB 4534 RC.docx
+2025-12-15 23:29:05,635 - INFO - Uploading: RC_24-Nov-2022_15_15_KA 06 AB 4534 RC.docx (444.46 KB)
+2025-12-15 23:29:13,575 - INFO - Uploading: RC_24-Nov-2022_15_15_KA 06 AB 4534 RC.docx (444.46 KB)
+2025-12-15 23:29:16,452 - INFO - 
+============================================================
+2025-12-15 23:29:16,453 - INFO - Upload Summary:
+2025-12-15 23:29:16,454 - INFO -   Total files: 9
+2025-12-15 23:29:16,455 - INFO -   Successful: 5
+2025-12-15 23:29:16,457 - INFO -   Failed: 4
+2025-12-15 23:29:16,457 - INFO -   Total size: 5.19 MB
+2025-12-15 23:29:16,458 - INFO - ============================================================
+
+2025-12-15 23:29:16,465 - INFO - 
+============================================================
+2025-12-15 23:29:16,468 - INFO - Monitoring parsing progress for 5 files...
+2025-12-15 23:29:16,469 - INFO - Max wait time: 30 minutes, Check interval: 10 seconds
+2025-12-15 23:29:16,469 - INFO - ============================================================
+
+2025-12-15 23:29:16,474 - INFO - [Check 1] Status at 23:29:16
+2025-12-15 23:29:38,510 - INFO -   Waiting... (4 files still processing, elapsed: 0.4min)
+
+2025-12-15 23:29:48,529 - INFO - [Check 2] Status at 23:29:48
+2025-12-15 23:29:57,625 - INFO - 
+============================================================
+2025-12-15 23:29:57,641 - INFO - Monitoring completed in 0.7 minutes
+2025-12-15 23:29:57,641 - INFO - ============================================================
+
+2025-12-15 23:29:57,823 - INFO - 
+============================================================
+2025-12-15 23:29:57,823 - INFO - FINAL REPORT
+2025-12-15 23:29:57,828 - INFO - ============================================================
+2025-12-15 23:29:57,829 - INFO - 
+Upload Statistics:
+2025-12-15 23:29:57,831 - INFO -   Total files: 9
+2025-12-15 23:29:57,834 - INFO -   Successful: 5
+2025-12-15 23:29:57,835 - INFO -   Failed: 4
+2025-12-15 23:29:57,839 - INFO -   Success rate: 55.55555555555556%
+2025-12-15 23:29:57,841 - INFO -   Total size: 5.19 MB
+2025-12-15 23:29:57,845 - INFO - 
+Parsing Statistics:
+2025-12-15 23:29:57,848 - INFO -   Completed: 0
+2025-12-15 23:29:57,852 - INFO -   Failed: 5
+2025-12-15 23:29:57,854 - INFO -   Timeout: 0
+2025-12-15 23:29:57,857 - INFO - 
+Execution Time:
+2025-12-15 23:29:57,857 - INFO -   Start: 2025-12-15 23:27:46
+2025-12-15 23:29:57,859 - INFO -   End: 2025-12-15 23:29:57
+2025-12-15 23:29:57,860 - INFO -   Duration: 2.2 minutes
+2025-12-15 23:29:57,862 - INFO - ============================================================
+
+2025-12-15 23:46:35,703 - INFO - 
+============================================================
+2025-12-15 23:46:35,704 - INFO - Starting file uploads
+2025-12-15 23:46:35,704 - INFO - Folder: ../../../../OneDrive/Documents/v1
+2025-12-15 23:46:35,704 - INFO - Files found: 9
+2025-12-15 23:46:35,704 - INFO - Tags: None
+2025-12-15 23:46:35,704 - INFO - ============================================================
+
+2025-12-15 23:46:35,705 - INFO - [1/9] Uploading: Pollution 04-11-2025_08-Nov-2024_16_19_KA 06 AB 4586 Pollu 04-11-2025.pdf
+2025-12-15 23:46:35,705 - INFO - Uploading: Pollution 04-11-2025_08-Nov-2024_16_19_KA 06 AB 4586 Pollu 04-11-2025.pdf (1.39 MB)
+2025-12-15 23:46:37,866 - INFO - [2/9] Uploading: Pollution 19-08-2026_30-Aug-2025_12_25_KA 06 AB 4529 Pollu 19-08-2026.pdf
+2025-12-15 23:46:37,866 - INFO - Uploading: Pollution 19-08-2026_30-Aug-2025_12_25_KA 06 AB 4529 Pollu 19-08-2026.pdf (1.23 MB)
+2025-12-15 23:46:40,565 - INFO - [3/9] Uploading: Pollution 19-08-2026_30-Aug-2025_12_26_KA 06 AB 4534 Pollu 19-08-2026.pdf
+2025-12-15 23:46:40,566 - INFO - Uploading: Pollution 19-08-2026_30-Aug-2025_12_26_KA 06 AB 4534 Pollu 19-08-2026.pdf (1.24 MB)
+2025-12-15 23:46:43,940 - INFO - [4/9] Uploading: Pollution 27-09-2026_07-Oct-2025_13_12_KA 06 AB 4584 Pollu 27-09-2026.pdf
+2025-12-15 23:46:43,942 - INFO - Uploading: Pollution 27-09-2026_07-Oct-2025_13_12_KA 06 AB 4584 Pollu 27-09-2026.pdf (626.91 KB)
+2025-12-15 23:46:48,136 - INFO - [5/9] Uploading: Pollution 27-09-2026_07-Oct-2025_13_12_KA 06 AB 4585 Pollu 27-09-2026.pdf
+2025-12-15 23:46:48,142 - INFO - Uploading: Pollution 27-09-2026_07-Oct-2025_13_12_KA 06 AB 4585 Pollu 27-09-2026.pdf (726.44 KB)
+2025-12-15 23:46:52,756 - INFO - [6/9] Uploading: RC_22-Oct-2022_16_10_KA 06 AB 4584 RC.docx
+2025-12-15 23:46:52,762 - INFO - Uploading: RC_22-Oct-2022_16_10_KA 06 AB 4584 RC.docx (424.32 KB)
+2025-12-15 23:46:56,768 - INFO - [7/9] Uploading: RC_22-Oct-2022_16_12_KA 06 AB 4585 RC.docx
+2025-12-15 23:46:56,770 - INFO - Uploading: RC_22-Oct-2022_16_12_KA 06 AB 4585 RC.docx (416.72 KB)
+2025-12-15 23:47:06,382 - INFO - Uploading: RC_22-Oct-2022_16_12_KA 06 AB 4585 RC.docx (416.72 KB)
+2025-12-15 23:47:08,623 - INFO - [8/9] Uploading: RC_22-Oct-2022_16_15_KA 06 AB 4586 RC.docx
+2025-12-15 23:47:08,630 - INFO - Uploading: RC_22-Oct-2022_16_15_KA 06 AB 4586 RC.docx (430.13 KB)
+2025-12-15 23:47:18,039 - INFO - Uploading: RC_22-Oct-2022_16_15_KA 06 AB 4586 RC.docx (430.13 KB)
+2025-12-15 23:47:20,176 - INFO - [9/9] Uploading: RC_24-Nov-2022_15_15_KA 06 AB 4534 RC.docx
+2025-12-15 23:47:20,177 - INFO - Uploading: RC_24-Nov-2022_15_15_KA 06 AB 4534 RC.docx (444.46 KB)
+2025-12-15 23:47:28,119 - INFO - Uploading: RC_24-Nov-2022_15_15_KA 06 AB 4534 RC.docx (444.46 KB)
+2025-12-15 23:47:30,513 - INFO - 
+============================================================
+2025-12-15 23:47:30,535 - INFO - Upload Summary:
+2025-12-15 23:47:30,540 - INFO -   Total files: 9
+2025-12-15 23:47:30,545 - INFO -   Successful: 5
+2025-12-15 23:47:30,553 - INFO -   Failed: 4
+2025-12-15 23:47:30,558 - INFO -   Total size: 4.21 MB
+2025-12-15 23:47:30,563 - INFO - ============================================================
+
+2025-12-15 23:47:30,581 - INFO - 
+============================================================
+2025-12-15 23:47:30,594 - INFO - Monitoring parsing progress for 5 files...
+2025-12-15 23:47:30,599 - INFO - Max wait time: 30 minutes, Check interval: 10 seconds
+2025-12-15 23:47:30,608 - INFO - ============================================================
+
+2025-12-15 23:47:30,624 - INFO - [Check 1] Status at 23:47:30
+2025-12-15 23:47:49,378 - INFO -   Waiting... (5 files still processing, elapsed: 0.3min)
+
+2025-12-15 23:47:59,419 - INFO - [Check 2] Status at 23:47:59
+2025-12-15 23:48:22,409 - INFO -   Waiting... (5 files still processing, elapsed: 0.9min)
+
+2025-12-15 23:48:32,476 - INFO - [Check 3] Status at 23:48:32
+2025-12-15 23:48:46,534 - INFO -   Waiting... (5 files still processing, elapsed: 1.3min)
+
+2025-12-15 23:48:56,540 - INFO - [Check 4] Status at 23:48:56
+2025-12-15 23:49:08,229 - INFO -   Waiting... (5 files still processing, elapsed: 1.6min)
+
+2025-12-15 23:49:18,235 - INFO - [Check 5] Status at 23:49:18
+2025-12-15 23:49:29,017 - INFO -   Waiting... (5 files still processing, elapsed: 2.0min)
+
+2025-12-15 23:49:39,022 - INFO - [Check 6] Status at 23:49:39
+2025-12-15 23:49:53,269 - INFO -   Waiting... (5 files still processing, elapsed: 2.4min)
+
+2025-12-15 23:50:03,293 - INFO - [Check 7] Status at 23:50:03
+2025-12-15 23:50:18,236 - INFO -   Waiting... (5 files still processing, elapsed: 2.8min)
+
+2025-12-15 23:50:28,298 - INFO - [Check 8] Status at 23:50:28
+2025-12-15 23:50:42,338 - INFO -   Waiting... (4 files still processing, elapsed: 3.2min)
+
+2025-12-15 23:50:52,358 - INFO - [Check 9] Status at 23:50:52
+2025-12-15 23:51:28,308 - INFO -   Waiting... (1 files still processing, elapsed: 4.0min)
+
+2025-12-15 23:51:38,321 - INFO - [Check 10] Status at 23:51:38
+2025-12-15 23:51:42,380 - INFO -   Waiting... (1 files still processing, elapsed: 4.2min)
+
+2025-12-15 23:51:52,452 - INFO - [Check 11] Status at 23:51:52
+2025-12-15 23:52:03,685 - INFO -   Waiting... (1 files still processing, elapsed: 4.6min)
+
+2025-12-15 23:52:13,823 - INFO - [Check 12] Status at 23:52:13
+2025-12-15 23:52:21,678 - INFO -   Waiting... (1 files still processing, elapsed: 4.9min)
+
+2025-12-15 23:52:31,888 - INFO - [Check 13] Status at 23:52:31
+2025-12-15 23:52:45,898 - INFO -   Waiting... (1 files still processing, elapsed: 5.3min)
+
+2025-12-15 23:52:56,015 - INFO - [Check 14] Status at 23:52:55
+2025-12-15 23:53:04,331 - INFO -   Waiting... (1 files still processing, elapsed: 5.6min)
+
+2025-12-15 23:53:14,372 - INFO - [Check 15] Status at 23:53:14
+2025-12-15 23:53:23,223 - INFO -   Waiting... (1 files still processing, elapsed: 5.9min)
+
+2025-12-15 23:53:33,259 - INFO - [Check 16] Status at 23:53:33
+2025-12-15 23:53:45,532 - INFO -   Waiting... (1 files still processing, elapsed: 6.2min)
+
+2025-12-15 23:53:56,222 - INFO - [Check 17] Status at 23:53:56
+2025-12-15 23:54:17,466 - INFO -   Waiting... (1 files still processing, elapsed: 6.8min)
+
+2025-12-15 23:54:28,028 - INFO - [Check 18] Status at 23:54:28
+2025-12-15 23:54:37,854 - INFO -   Waiting... (1 files still processing, elapsed: 7.1min)
+
+2025-12-15 23:54:51,298 - INFO - [Check 19] Status at 23:54:48
+2025-12-15 23:55:05,403 - INFO -   Waiting... (1 files still processing, elapsed: 7.6min)
+
+2025-12-15 23:55:15,860 - INFO - [Check 20] Status at 23:55:15
+2025-12-15 23:55:25,548 - INFO -   Waiting... (1 files still processing, elapsed: 7.9min)
+
+2025-12-15 23:55:38,221 - INFO - [Check 21] Status at 23:55:36
+2025-12-15 23:55:44,697 - INFO -   Waiting... (1 files still processing, elapsed: 8.2min)
+
+2025-12-15 23:55:54,746 - INFO - [Check 22] Status at 23:55:54
+2025-12-15 23:55:59,777 - INFO -   Waiting... (1 files still processing, elapsed: 8.5min)
+
+2025-12-15 23:56:10,009 - INFO - [Check 23] Status at 23:56:09
+2025-12-15 23:56:19,141 - INFO -   Waiting... (1 files still processing, elapsed: 8.8min)
+
+2025-12-15 23:56:29,208 - INFO - [Check 24] Status at 23:56:29
+2025-12-15 23:56:39,017 - INFO -   Waiting... (1 files still processing, elapsed: 9.1min)
+
+2025-12-15 23:56:49,115 - INFO - [Check 25] Status at 23:56:49
+2025-12-15 23:57:01,797 - INFO -   Waiting... (1 files still processing, elapsed: 9.5min)
+
+2025-12-15 23:57:12,972 - INFO - [Check 26] Status at 23:57:12
+2025-12-15 23:57:16,743 - INFO -   Waiting... (1 files still processing, elapsed: 9.8min)
+
+2025-12-15 23:57:27,776 - INFO - [Check 27] Status at 23:57:27
+2025-12-15 23:57:33,015 - INFO -   Waiting... (1 files still processing, elapsed: 10.0min)
+
+2025-12-15 23:57:44,433 - INFO - [Check 28] Status at 23:57:43
+2025-12-15 23:57:51,964 - INFO -   Waiting... (1 files still processing, elapsed: 10.4min)
+
+2025-12-15 23:58:02,059 - INFO - [Check 29] Status at 23:58:02
+2025-12-15 23:58:34,188 - INFO -   Waiting... (1 files still processing, elapsed: 11.1min)
+
+2025-12-15 23:58:44,190 - INFO - [Check 30] Status at 23:58:44
+2025-12-15 23:59:16,230 - INFO -   Waiting... (1 files still processing, elapsed: 11.8min)
+
+2025-12-15 23:59:26,234 - INFO - [Check 31] Status at 23:59:26
+2025-12-15 23:59:58,295 - INFO -   Waiting... (1 files still processing, elapsed: 12.5min)
+
+2025-12-16 00:00:08,298 - INFO - [Check 32] Status at 00:00:08
+2025-12-16 00:00:40,352 - INFO -   Waiting... (1 files still processing, elapsed: 13.2min)
+
+2025-12-16 00:00:50,354 - INFO - [Check 33] Status at 00:00:50
+2025-12-16 00:01:22,419 - INFO -   Waiting... (1 files still processing, elapsed: 13.9min)
+
+2025-12-16 00:01:32,421 - INFO - [Check 34] Status at 00:01:32
+2025-12-16 00:02:04,490 - INFO -   Waiting... (1 files still processing, elapsed: 14.6min)
+
+2025-12-16 00:02:14,491 - INFO - [Check 35] Status at 00:02:14
+2025-12-16 00:02:46,548 - INFO -   Waiting... (1 files still processing, elapsed: 15.3min)
+
+2025-12-16 00:02:56,549 - INFO - [Check 36] Status at 00:02:56
+2025-12-16 00:03:28,597 - INFO -   Waiting... (1 files still processing, elapsed: 16.0min)
+
+2025-12-16 00:03:38,598 - INFO - [Check 37] Status at 00:03:38
+2025-12-16 00:04:10,687 - INFO -   Waiting... (1 files still processing, elapsed: 16.7min)
+
+2025-12-16 00:04:20,689 - INFO - [Check 38] Status at 00:04:20
+2025-12-16 00:04:52,743 - INFO -   Waiting... (1 files still processing, elapsed: 17.4min)
+
+2025-12-16 00:05:02,744 - INFO - [Check 39] Status at 00:05:02
+2025-12-16 00:05:34,785 - INFO -   Waiting... (1 files still processing, elapsed: 18.1min)
+
+2025-12-16 00:05:44,786 - INFO - [Check 40] Status at 00:05:44
+2025-12-16 00:06:16,851 - INFO -   Waiting... (1 files still processing, elapsed: 18.8min)
+
+2025-12-16 00:06:26,853 - INFO - [Check 41] Status at 00:06:26
+2025-12-16 00:06:58,906 - INFO -   Waiting... (1 files still processing, elapsed: 19.5min)
+
+2025-12-16 00:07:08,908 - INFO - [Check 42] Status at 00:07:08
+2025-12-16 00:07:40,956 - INFO -   Waiting... (1 files still processing, elapsed: 20.2min)
+
+2025-12-16 00:07:50,957 - INFO - [Check 43] Status at 00:07:50
+2025-12-16 00:08:23,008 - INFO -   Waiting... (1 files still processing, elapsed: 20.9min)
+
+2025-12-16 00:08:33,010 - INFO - [Check 44] Status at 00:08:33
+2025-12-16 00:09:05,086 - INFO -   Waiting... (1 files still processing, elapsed: 21.6min)
+
+2025-12-16 00:09:15,087 - INFO - [Check 45] Status at 00:09:15
+2025-12-16 00:09:47,144 - INFO -   Waiting... (1 files still processing, elapsed: 22.3min)
+
+2025-12-16 00:09:57,153 - INFO - [Check 46] Status at 00:09:57
+2025-12-16 00:10:29,223 - INFO -   Waiting... (1 files still processing, elapsed: 23.0min)
+
+2025-12-16 00:10:39,224 - INFO - [Check 47] Status at 00:10:39
+2025-12-16 00:11:11,272 - INFO -   Waiting... (1 files still processing, elapsed: 23.7min)
+
+2025-12-16 00:11:21,274 - INFO - [Check 48] Status at 00:11:21
+2025-12-16 00:11:53,339 - INFO -   Waiting... (1 files still processing, elapsed: 24.4min)
+
+2025-12-16 00:12:03,340 - INFO - [Check 49] Status at 00:12:03
+2025-12-16 00:12:35,392 - INFO -   Waiting... (1 files still processing, elapsed: 25.1min)
+
+2025-12-16 00:12:45,393 - INFO - [Check 50] Status at 00:12:45
+2025-12-16 00:13:17,443 - INFO -   Waiting... (1 files still processing, elapsed: 25.8min)
+
+2025-12-16 00:13:27,444 - INFO - [Check 51] Status at 00:13:27
+2025-12-16 04:11:42,153 - INFO -   Waiting... (1 files still processing, elapsed: 264.2min)
+
+2025-12-16 04:11:52,216 - INFO - [Check 52] Status at 04:11:52

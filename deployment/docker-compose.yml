@@ -1,0 +1,81 @@
+version: '3.8'
+
+services:
+  # MySQL Database - for file metadata, text storage, and blobs
+  mysql:
+    image: mysql:8.0
+    container_name: final-bi-mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: 1234
+      MYSQL_DATABASE: documents
+      MYSQL_PASSWORD: 1234
+    ports:
+      - "3306:3306"
+    volumes:
+      - mysql_data:/var/lib/mysql
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost"]
+      timeout: 20s
+      retries: 10
+      interval: 10s
+    networks:
+      - bi-network
+
+  # Qdrant Vector Database - for semantic and keyword search
+  qdrant:
+    image: qdrant/qdrant:latest
+    container_name: final-bi-qdrant
+    ports:
+      - "6333:6333"
+      - "6334:6334"
+    volumes:
+      - qdrant_storage:/qdrant/storage
+    environment:
+      QDRANT_API_KEY: ""  # No auth by default; set if needed
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:6333/health"]
+      timeout: 10s
+      retries: 5
+      interval: 5s
+    networks:
+      - bi-network
+
+  # FastAPI Application
+  # fastapi-app:
+  #   build:
+  #     context: .
+  #     dockerfile: Dockerfile
+  #   container_name: final-bi-api
+  #   ports:
+  #     - "8000:8000"
+  #   environment:
+  #     # MySQL Configuration
+  #     MYSQL_HOST: mysql
+  #     MYSQL_PORT: 3306
+  #     MYSQL_USER: bi_user
+  #     MYSQL_PASSWORD: bi_password_123
+  #     MYSQL_DATABASE: documents
+  #     # Qdrant Configuration
+  #     QDRANT_URL: http://qdrant:6333
+  #     # App Configuration
+  #     LOG_LEVEL: info
+  #   depends_on:
+  #     mysql:
+  #       condition: service_healthy
+  #     qdrant:
+  #       condition: service_healthy
+  #   volumes:
+  #     - ./src:/app/src
+  #   command: uvicorn src.main:app --host 0.0.0.0 --port 8000 --reload
+  #   networks:
+  #     - bi-network
+
+volumes:
+  mysql_data:
+    driver: local
+  qdrant_storage:
+    driver: local
+
+networks:
+  bi-network:
+    driver: bridge

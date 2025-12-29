@@ -1,0 +1,95 @@
+{
+  "stats": {
+    "total_files": 9,
+    "successful_uploads": 5,
+    "failed_uploads": 4,
+    "total_size_bytes": 5436917,
+    "start_time": "2025-12-15T23:27:46.532012",
+    "end_time": null
+  },
+  "results": [
+    {
+      "file_name": "Pollution 04-11-2025_08-Nov-2024_16_19_KA 06 AB 4586 Pollu 04-11-2025.pdf",
+      "file_path": "..\\..\\..\\..\\OneDrive\\Documents\\v1\\Pollution 04-11-2025_08-Nov-2024_16_19_KA 06 AB 4586 Pollu 04-11-2025.pdf",
+      "file_size": 1455574,
+      "file_id": 3,
+      "status": "uploaded",
+      "tags": [],
+      "upload_time": "2025-12-15T23:27:49.460256",
+      "error": null,
+      "parsing_state": "failed"
+    },
+    {
+      "file_name": "Pollution 19-08-2026_30-Aug-2025_12_25_KA 06 AB 4529 Pollu 19-08-2026.pdf",
+      "file_path": "..\\..\\..\\..\\OneDrive\\Documents\\v1\\Pollution 19-08-2026_30-Aug-2025_12_25_KA 06 AB 4529 Pollu 19-08-2026.pdf",
+      "file_size": 1290573,
+      "file_id": 4,
+      "status": "uploaded",
+      "tags": [],
+      "upload_time": "2025-12-15T23:27:52.324610",
+      "error": null,
+      "parsing_state": "failed"
+    },
+    {
+      "file_name": "Pollution 19-08-2026_30-Aug-2025_12_26_KA 06 AB 4534 Pollu 19-08-2026.pdf",
+      "file_path": "..\\..\\..\\..\\OneDrive\\Documents\\v1\\Pollution 19-08-2026_30-Aug-2025_12_26_KA 06 AB 4534 Pollu 19-08-2026.pdf",
+      "file_size": 1304947,
+      "file_id": 5,
+      "status": "uploaded",
+      "tags": [],
+      "upload_time": "2025-12-15T23:27:55.428892",
+      "error": null,
+      "parsing_state": "failed"
+    },
+    {
+      "file_name": "Pollution 27-09-2026_07-Oct-2025_13_12_KA 06 AB 4584 Pollu 27-09-2026.pdf",
+      "file_path": "..\\..\\..\\..\\OneDrive\\Documents\\v1\\Pollution 27-09-2026_07-Oct-2025_13_12_KA 06 AB 4584 Pollu 27-09-2026.pdf",
+      "file_size": 641951,
+      "file_id": 6,
+      "status": "uploaded",
+      "tags": [],
+      "upload_time": "2025-12-15T23:27:57.970354",
+      "error": null,
+      "parsing_state": "failed"
+    },
+    {
+      "file_name": "Pollution 27-09-2026_07-Oct-2025_13_12_KA 06 AB 4585 Pollu 27-09-2026.pdf",
+      "file_path": "..\\..\\..\\..\\OneDrive\\Documents\\v1\\Pollution 27-09-2026_07-Oct-2025_13_12_KA 06 AB 4585 Pollu 27-09-2026.pdf",
+      "file_size": 743872,
+      "file_id": 7,
+      "status": "uploaded",
+      "tags": [],
+      "upload_time": "2025-12-15T23:28:03.399855",
+      "error": null,
+      "parsing_state": "failed"
+    },
+    {
+      "file_name": "RC_22-Oct-2022_16_10_KA 06 AB 4584 RC.docx",
+      "file_path": "..\\..\\..\\..\\OneDrive\\Documents\\v1\\RC_22-Oct-2022_16_10_KA 06 AB 4584 RC.docx",
+      "file_size": 434507,
+      "status": "failed",
+      "error": "Internal Server Error"
+    },
+    {
+      "file_name": "RC_22-Oct-2022_16_12_KA 06 AB 4585 RC.docx",
+      "file_path": "..\\..\\..\\..\\OneDrive\\Documents\\v1\\RC_22-Oct-2022_16_12_KA 06 AB 4585 RC.docx",
+      "file_size": 426719,
+      "status": "failed",
+      "error": "Internal Server Error"
+    },
+    {
+      "file_name": "RC_22-Oct-2022_16_15_KA 06 AB 4586 RC.docx",
+      "file_path": "..\\..\\..\\..\\OneDrive\\Documents\\v1\\RC_22-Oct-2022_16_15_KA 06 AB 4586 RC.docx",
+      "file_size": 440454,
+      "status": "failed",
+      "error": "Internal Server Error"
+    },
+    {
+      "file_name": "RC_24-Nov-2022_15_15_KA 06 AB 4534 RC.docx",
+      "file_path": "..\\..\\..\\..\\OneDrive\\Documents\\v1\\RC_24-Nov-2022_15_15_KA 06 AB 4534 RC.docx",
+      "file_size": 455123,
+      "status": "failed",
+      "error": "Internal Server Error"
+    }
+  ]
+}
